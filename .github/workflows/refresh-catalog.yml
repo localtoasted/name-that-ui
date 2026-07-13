@@ -35,7 +35,7 @@ jobs:
 
       - name: Check out the repository
         if: steps.schedule.outputs.should_run == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - name: Refresh the catalog
         if: steps.schedule.outputs.should_run == 'true'
