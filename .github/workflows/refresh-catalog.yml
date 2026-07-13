@@ -1,0 +1,70 @@
+name: Refresh UI catalog
+
+on:
+  schedule:
+    - cron: "23 9 * * *"
+      timezone: "America/Los_Angeles"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Decide whether today is scheduled
+        id: schedule
+        shell: bash
+        run: |
+          today="$(date -u +%F)"
+          weekday="$(date -u +%u)"
+          should_run=false
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            should_run=true
+          elif [[ "$today" < "2026-07-19" ]]; then
+            should_run=true
+          elif [[ "$weekday" == "1" ]]; then
+            should_run=true
+          fi
+
+          echo "should_run=$should_run" >> "$GITHUB_OUTPUT"
+
+      - name: Check out the repository
+        if: steps.schedule.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Refresh the catalog
+        if: steps.schedule.outputs.should_run == 'true'
+        run: python3 name-that-ui/scripts/update_catalog.py
+
+      - name: Open or update the catalog pull request
+        if: steps.schedule.outputs.should_run == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- name-that-ui/references/catalog.json; then
+            echo "Catalog is already current."
+            exit 0
+          fi
+
+          branch="automation/catalog-refresh"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add name-that-ui/references/catalog.json
+          git commit -m "refresh UI catalog"
+          git push --force origin "$branch"
+
+          existing_pr="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          if [[ -z "$existing_pr" ]]; then
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "Refresh UI catalog" \
+              --body "Automated catalog refresh from [NameThat UI](https://namethatui.com/), created by [@argofowl](https://x.com/argofowl). Review the entry changes before merging."
+          fi
