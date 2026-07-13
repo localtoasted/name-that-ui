@@ -1,0 +1,4 @@
+interface:
+  display_name: "name-that-ui"
+  short_description: "Name, choose, and specify UI patterns"
+  default_prompt: "Use $name-that-ui to identify this UI element and turn it into a precise implementation brief."
