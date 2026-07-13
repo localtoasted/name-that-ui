@@ -45,6 +45,18 @@ Invoke it directly with `/name-that-ui`, or let Claude Code load it automaticall
 
 Claude Code and Codex both read the standard `SKILL.md`, `references/`, and `scripts/` content. `agents/openai.yaml` provides optional Codex UI metadata and is safely ignored by Claude Code. Bundled script instructions resolve from the skill directory (`${CLAUDE_SKILL_DIR}` in Claude Code), so they work regardless of the project currently open.
 
+## Automatic catalog updates
+
+The repository checks [NameThat UI](https://namethatui.com/) for catalog changes at **9:23 AM Pacific time**:
+
+- daily through Saturday, July 18, 2026
+- every Monday beginning July 20, 2026
+- any time the workflow is manually started from GitHub's Actions tab
+
+If nothing changed, the workflow exits without creating a commit. If entries were added, removed, or renamed, it opens or updates a `Refresh UI catalog` pull request for review. It never merges or publishes catalog changes automatically.
+
+The scheduled workflow uses a standard GitHub-hosted Ubuntu runner, which is free for this public repository.
+
 ## Original creator credit
 
 This is an unofficial companion skill inspired by and derived from [NameThat UI](https://namethatui.com/), the original visual dictionary of UI created by [@argofowl](https://x.com/argofowl).

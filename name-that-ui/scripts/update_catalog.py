@@ -50,6 +50,12 @@ def main() -> int:
         )
 
     entries.sort(key=lambda item: (item["platform"], item["name"].casefold()))
+    if OUT.exists():
+        current = json.loads(OUT.read_text(encoding="utf-8"))
+        if current.get("entries") == entries:
+            print(f"catalog unchanged ({len(entries)} entries)")
+            return 0
+
     payload = {
         "source": BASE,
         "refreshed": date.today().isoformat(),
@@ -63,4 +69,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
