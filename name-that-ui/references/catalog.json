@@ -1,7 +1,7 @@
 {
   "source": "https://namethatui.com",
-  "refreshed": "2026-07-12",
-  "entry_count": 56,
+  "refreshed": "2026-07-20",
+  "entry_count": 71,
   "entries": [
     {
       "platform": "macos",
@@ -137,6 +137,25 @@
         "ring around buttons when full keyboard access is on"
       ],
       "url": "https://namethatui.com/macos/focus-ring"
+    },
+    {
+      "platform": "macos",
+      "slug": "insertion-caret",
+      "name": "Insertion Caret (Insertion Point)",
+      "aliases": [
+        "insertion point",
+        "text caret",
+        "text cursor",
+        "typing caret",
+        "the blinking line where i am typing",
+        "the little vertical bar inside the text field",
+        "the cursor blinking between letters",
+        "the line that shows where the next character goes",
+        "typing indicator inside the input",
+        "the blinking editor in the time field",
+        "the text cursor that stays after i click the field"
+      ],
+      "url": "https://namethatui.com/macos/insertion-caret"
     },
     {
       "platform": "macos",
@@ -539,6 +558,7 @@
         "expandable sections",
         "collapse",
         "expander",
+        "it has a plus icon when collapsed and minus icon when expanded",
         "the list where rows open to show more",
         "expand and collapse sections",
         "the faq with clickable questions",
@@ -566,6 +586,22 @@
     },
     {
       "platform": "web",
+      "slug": "bento-grid",
+      "name": "Bento Grid",
+      "aliases": [
+        "bento box layout",
+        "feature grid",
+        "dashboard grid",
+        "several boxes in a grid bento",
+        "boxes of different sizes in a grid",
+        "the grid with one big box and smaller boxes around it",
+        "the apple style feature grid with rounded cards",
+        "dashboard made of different sized tiles"
+      ],
+      "url": "https://namethatui.com/web/bento-grid"
+    },
+    {
+      "platform": "web",
       "slug": "breadcrumbs",
       "name": "Breadcrumbs",
       "aliases": [
@@ -582,6 +618,43 @@
     },
     {
       "platform": "web",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "tile",
+        "card component",
+        "content card",
+        "status card",
+        "status cards",
+        "score card",
+        "task card structure",
+        "those cards have a massive chin",
+        "the box with an image on top and text below",
+        "the tiles on the dashboard"
+      ],
+      "url": "https://namethatui.com/web/card"
+    },
+    {
+      "platform": "web",
+      "slug": "carousel",
+      "name": "Carousel",
+      "aliases": [
+        "slider",
+        "content slider",
+        "slideshow",
+        "image slider",
+        "swiper",
+        "a card slider",
+        "carousel slider thing",
+        "the image slider with the little dots",
+        "the banner that cycles through images",
+        "three rotating images you can switch manually",
+        "the slideshow you flick through sideways"
+      ],
+      "url": "https://namethatui.com/web/carousel"
+    },
+    {
+      "platform": "web",
       "slug": "combobox",
       "name": "Combobox (Autocomplete / Typeahead)",
       "aliases": [
@@ -589,6 +662,7 @@
         "typeahead",
         "search select",
         "editable dropdown",
+        "输入下拉",
         "the input that suggests options as you type",
         "a searchable dropdown field",
         "the text box with matching results underneath",
@@ -614,6 +688,25 @@
         "the cmd k popup"
       ],
       "url": "https://namethatui.com/web/command-palette"
+    },
+    {
+      "platform": "web",
+      "slug": "date-picker",
+      "name": "Date Picker",
+      "aliases": [
+        "calendar picker",
+        "calendar popup",
+        "calendar dropdown",
+        "date range picker",
+        "month view",
+        "calendar",
+        "calendario",
+        "date range filter calendar",
+        "the little calendar that pops up",
+        "pick a start and end date",
+        "textbox with a calendar dropdown"
+      ],
+      "url": "https://namethatui.com/web/date-picker"
     },
     {
       "platform": "web",
@@ -647,9 +740,26 @@
         "line indicators for where it will drop",
         "the neighboring terminal is highlighted as a whole",
         "half of that terminal is highlighted",
-        "the ghost copy that follows the pointer"
+        "the ghost copy that follows the pointer",
+        "drag to move option to one side to another"
       ],
       "url": "https://namethatui.com/web/drag-and-drop"
+    },
+    {
+      "platform": "web",
+      "slug": "easing",
+      "name": "Easing (Timing Function)",
+      "aliases": [
+        "timing function",
+        "easing curve",
+        "bezier curve",
+        "the animation feels robotic and linear",
+        "how the movement speeds up and slows down",
+        "the curve that controls the animation speed",
+        "make it start fast and end slow",
+        "the s shaped graph in the animation settings"
+      ],
+      "url": "https://namethatui.com/web/easing"
     },
     {
       "platform": "web",
@@ -704,6 +814,24 @@
     },
     {
       "platform": "web",
+      "slug": "hamburger-menu",
+      "name": "Hamburger Menu (Nav Drawer)",
+      "aliases": [
+        "navigation drawer",
+        "hamburger button",
+        "side menu",
+        "off-canvas menu",
+        "the three horizontal lines used to open a menu",
+        "three line side menu that expands to the full size of the screen",
+        "the burger menu on mobile sites",
+        "the menu that slides in from the side when you tap the lines",
+        "the stacked lines button at the top corner",
+        "the side panel with all the page links"
+      ],
+      "url": "https://namethatui.com/web/hamburger-menu"
+    },
+    {
+      "platform": "web",
       "slug": "hover-card",
       "name": "Hover Card",
       "aliases": [
@@ -753,6 +881,22 @@
     },
     {
       "platform": "web",
+      "slug": "masonry",
+      "name": "Masonry Layout (Pinterest Grid)",
+      "aliases": [
+        "waterfall layout",
+        "pinterest grid",
+        "brick layout",
+        "the pinterest style grid where every card is a different height",
+        "photos stacked like bricks with no gaps",
+        "columns where the cards don't line up in rows",
+        "the photo wall where images keep their own height",
+        "cards that fill in under each other instead of in rows"
+      ],
+      "url": "https://namethatui.com/web/masonry"
+    },
+    {
+      "platform": "web",
       "slug": "dialog-drawer-sheet",
       "name": "Modal Dialog vs. Drawer vs. Sheet",
       "aliases": [
@@ -767,6 +911,43 @@
         "the floating box with a dark background behind it"
       ],
       "url": "https://namethatui.com/web/dialog-drawer-sheet"
+    },
+    {
+      "platform": "web",
+      "slug": "pagination",
+      "name": "Pagination",
+      "aliases": [
+        "pager",
+        "paging controls",
+        "page navigation",
+        "page numbers",
+        "page control",
+        "datatable pagination",
+        "page number for tables",
+        "the numbered buttons at the bottom of the list",
+        "previous 1 2 3 next",
+        "the three dots between the page numbers",
+        "the little dots showing which page you are on"
+      ],
+      "url": "https://namethatui.com/web/pagination"
+    },
+    {
+      "platform": "web",
+      "slug": "parallax",
+      "name": "Parallax Scrolling",
+      "aliases": [
+        "parallax effect",
+        "parallax background",
+        "scroll-linked depth effect",
+        "fixed background",
+        "efecto de imagen atras de web",
+        "ful page paralax animation",
+        "paralax",
+        "the background moves slower than the page when you scroll",
+        "the image stays still while the content scrolls over it",
+        "3d depth effect when scrolling"
+      ],
+      "url": "https://namethatui.com/web/parallax"
     },
     {
       "platform": "web",
@@ -805,6 +986,24 @@
     },
     {
       "platform": "web",
+      "slug": "resize-handle",
+      "name": "Resize Handle (Size Grip)",
+      "aliases": [
+        "size grip",
+        "resize grip",
+        "gripper",
+        "resizer",
+        "drag corner",
+        "three small diagonal lines at the bottom right of a text field",
+        "the corner thing you drag to make the text box bigger",
+        "the little diagonal stripes in the corner of a comment box",
+        "the drag corner of a textarea",
+        "the grippy corner on an input"
+      ],
+      "url": "https://namethatui.com/web/resize-handle"
+    },
+    {
+      "platform": "web",
       "slug": "scrim",
       "name": "Scrim (Backdrop / Overlay)",
       "aliases": [
@@ -819,6 +1018,45 @@
         "the greyed out background behind a popup"
       ],
       "url": "https://namethatui.com/web/scrim"
+    },
+    {
+      "platform": "web",
+      "slug": "sign-in-form",
+      "name": "Sign-in Form",
+      "aliases": [
+        "login form",
+        "login page",
+        "login screen",
+        "sign-in page",
+        "auth form",
+        "authentication form",
+        "登陆界面",
+        "email box and password box with a login button",
+        "the eye icon on the password field",
+        "the sign in with google buttons",
+        "the line that says or between the login buttons",
+        "the screen where you type your email and password"
+      ],
+      "url": "https://namethatui.com/web/sign-in-form"
+    },
+    {
+      "platform": "web",
+      "slug": "header-navbar",
+      "name": "Site Header vs. Navigation Bar",
+      "aliases": [
+        "navbar",
+        "topbar",
+        "app bar",
+        "main navigation",
+        "page header",
+        "navbar",
+        "the navigation bar at the top",
+        "top navigation element with links to main pages",
+        "topbar",
+        "the bar at the top of the website with the links",
+        "the header menu"
+      ],
+      "url": "https://namethatui.com/web/header-navbar"
     },
     {
       "platform": "web",
@@ -839,6 +1077,22 @@
     },
     {
       "platform": "web",
+      "slug": "spring",
+      "name": "Spring Animation",
+      "aliases": [
+        "spring physics",
+        "bouncy animation",
+        "spring transition",
+        "the bouncy animation that goes past and comes back",
+        "it overshoots a little and settles",
+        "the jelly bounce when a panel opens",
+        "ios style bouncy movement",
+        "animation with stiffness and damping instead of duration"
+      ],
+      "url": "https://namethatui.com/web/spring"
+    },
+    {
+      "platform": "web",
       "slug": "sticky-fixed",
       "name": "Sticky vs. Fixed Positioning",
       "aliases": [
@@ -849,7 +1103,8 @@
         "the bar pinned to the top of the screen",
         "the element that starts scrolling then gets stuck",
         "keep this visible while scrolling",
-        "the floating button fixed in the corner"
+        "the floating button fixed in the corner",
+        "当我滚动页面的时候，实时保持显示"
       ],
       "url": "https://namethatui.com/web/sticky-fixed"
     },
@@ -888,6 +1143,22 @@
     },
     {
       "platform": "web",
+      "slug": "text-scramble",
+      "name": "Text Scramble (Decode Effect)",
+      "aliases": [
+        "decode effect",
+        "matrix text effect",
+        "shuffle text",
+        "the text that shuffles random letters until it spells the word",
+        "the matrix style decoding text",
+        "letters cycling before they land on the real ones",
+        "the hacker text effect",
+        "glitchy letters that resolve into a title"
+      ],
+      "url": "https://namethatui.com/web/text-scramble"
+    },
+    {
+      "platform": "web",
       "slug": "three-dots",
       "name": "The Three Dots (Overflow Menu)",
       "aliases": [
@@ -919,7 +1190,8 @@
         "confirmation that disappears by itself",
         "saved successfully popup",
         "temporary message after clicking a button",
-        "small alert at the bottom of the screen"
+        "small alert at the bottom of the screen",
+        "notification pop up"
       ],
       "url": "https://namethatui.com/web/toast"
     },
